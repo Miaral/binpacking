@@ -121,3 +121,36 @@ func (s *Strip) MaxX() float64 {
 	}
 	return max
 }
+
+func (s *Strip) MinX() float64 {
+	min := s.Obejcts[0].Vertices[0].X
+
+	for _, v := range s.Obejcts[0].Vertices {
+		if min > v.X {
+			min = v.X
+		}
+	}
+	return min
+}
+
+func (s *Strip) MaxY() float64 {
+	max := s.Obejcts[0].Vertices[1].Y
+
+	for _, v := range s.Obejcts[0].Vertices {
+		if max < v.Y {
+			max = v.Y
+		}
+	}
+	return max
+}
+
+func (s *Strip) MinY() float64 {
+	min := s.Obejcts[0].Vertices[1].Y
+
+	for _, v := range s.Obejcts[0].Vertices {
+		if min > v.Y{
+			min = v.Y
+		}
+	}
+	return min
+}
