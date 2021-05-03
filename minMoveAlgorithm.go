@@ -16,8 +16,11 @@ func BottomLeftFirst() {
 	// )
 
 }
-func moveToInitialPosition(srtip *Strip)float64{
+func moveToInitialPosition(sr *Strip)float64{
 	// 首先判断条带内是否摆放待排件
+	if len(sr.Obejcts)==0{
+		
+	}
 	
 }
 func getShiftY(strip *Strip, pol *Polygon) float64 {
