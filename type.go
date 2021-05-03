@@ -109,6 +109,7 @@ type Strip struct {
 	Sp      *Point
 	Obejcts []*Polygon
 }
+
 // 获取多边形最右值点的x值
 func (s *Strip) MaxX() float64 {
 	max := s.Obejcts[0].Vertices[0].X
